@@ -1,0 +1,284 @@
+body {
+	margin: 0;
+}
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 15fr 1fr;
+  grid-template-rows: 1fr;
+  height: 100px;
+}
+
+[class^="item"] {
+ /* background-color: black;*/
+}
+
+.item1 {
+ /* background-color: black;*/
+  grid-area: main;
+}
+
+.nav {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 260px;
+}
+
+.we {
+	display: grid;
+  grid-gap: 10px;
+  /*grid-template-areas: 400px;*/
+  padding: 5px;
+  
+	align-items: center;
+	justify-content: center;
+}
+
+.SDC {
+	grid-column: 1;
+	/*grid-column-start: 1;
+  grid-column-end: 4;*/
+	
+	max-width: 250px;
+	max-height: 250px;
+
+	
+	
+	
+
+}
+
+.item3 {
+	display: grid;
+	align-items: center;
+
+}
+
+.nb {
+	display: grid
+	grid-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    align-items: center;
+  	
+}
+
+/*.maybe {
+	display: grid;
+	text-align: center;
+	vertical-align: auto;
+	grid-row: 2;
+}*/
+
+.yes {
+	display: inline-grid;
+	margin-left: 20px;
+    margin-right: 20px;
+    align-items: end;
+	
+	font-size:  30px;
+
+  
+
+	color: #68868c;
+}
+
+
+
+
+}
+
+.zone {
+    /*padding:30px 50px;
+    margin:40px 60px;*/
+    cursor:pointer;
+    /*display:inline-block;*/
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+    
+
+}
+
+@media only screen and (max-width: 700px) {
+    .nav {
+        font-size: 0.1;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .pushleft {
+        
+        padding: 10px;
+    }
+}
+#SDC {
+     height: 120%;
+     width: auto;
+}
+
+.sticky {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+/*GRID*/
+
+.grid-wrapper {
+
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+
+}
+
+.box > img {
+    width: 100%;
+}
+
+.box {
+    background-color: #444;
+    padding: 100px;
+    margin: 20px
+}
+
+footer {
+    text-align: center;
+}
+
+
+.nav {
+    display: flex;
+    list-style: none;
+    font-size: 0.9em;
+    margin: 0;
+    height: 150px
+
+}
+
+.pushleft {
+    margin-left: auto;
+}
+.pushcenter {
+    margin-left: all; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+li {
+
+    padding: 20px;
+}
+
+a {
+    color: rgb(0,0,0);
+    text-decoration: none;
+}
+
+.aa {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200vh; /*100vh is 50% of screen*/
+
+
+}
+
+.cover {
+    width: 20rem;
+}
+
+.cover:hover {
+    
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+   transform: rotate(-50deg);
+}
+
+.pushleft {
+
+}
+
+
+
+}
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.im:hover {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+   transform: rotate(-50deg);
+}
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    background: #56B870; /* Old browsers */
+    background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    background: #C655BE; /* Old browsers */
+    background: -moz-linear-gradient(top, #C655BE 0%, #cf0404 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#C655BE), color-stop(100%,#cf0404)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
+    background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
