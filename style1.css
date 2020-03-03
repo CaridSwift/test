@@ -64,6 +64,7 @@ body {
     margin-left: 20px;
     margin-right: 20px;
     align-items: center;
+	white-space: nowrap;
   	
 }
 
