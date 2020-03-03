@@ -113,9 +113,13 @@ body {
     }
 }
 @media only screen and (max-width: 800px) {
-    .pushleft {
+    .yes {
         
         padding: 10px;
+        Font.size: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
     }
 }
 #SDC {
